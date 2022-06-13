@@ -76,13 +76,11 @@ section{
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: blue;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: green;
 }
 
 .active{
@@ -554,6 +552,55 @@ section{
         &:hover .hover-item{
             opacity: 1;
             transform: scale(1);
+        }
+    }
+}
+
+//Blogs
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .blog-item{
+        position: relative;
+        background-color: var(--color-grey-5);
+        border-radius: 15px;
+        box-shadow: 1px 1px 20px rgba(0,0,0,1);
+        transition: var(--transition);
+        &:hover{
+            transform: translateY(-5px);
+            transition: var(--transition);
+            img{
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+        img{
+            // width: 100%;
+            // height: 300px;
+            // object-fit: cover;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+        .blog-text{
+            margin-top: -7px;
+            padding: 1.1rem;
+            border-top: 8px solid var(--color-secondary);
+            h4{
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                transition: var(--transition);
+                cursor: pointer;
+                &:hover{
+                    color: var(--color-secondary);
+                }
+            }
+            p{
+                color: var(--color-grey-2);
+                line-height: 2rem;
+                padding-bottom: 1rem;
+            }
         }
     }
 }
