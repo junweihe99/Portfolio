@@ -5,6 +5,8 @@ This is my portfolio website. The overall structure of the website was set up us
   <ul>
     <li>Section control to swap between different sections of my portfolio
     <li>Toggle between dark and light mode
+    <li>Download resume
+    <li>My Skills and timeline
   </ul>
 
 <h4>Lessons Learned</h4>
