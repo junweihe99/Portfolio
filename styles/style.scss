@@ -22,6 +22,20 @@
     --transition: all .5s ease-in-out;
 }
 
+.light{
+    --color-primary: #FFFFFF;
+    --color-secondary: #F56692;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #f8f8f8;
+    --color-grey-6: #12181b;
+}
+
 body{
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -38,7 +52,7 @@ a{
 }
 
 header{
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -139,7 +153,7 @@ section{
 .header-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 100%;
+    min-height: 100vh;
     .left-header{
         display: flex;
         align-items: center;
@@ -230,10 +244,11 @@ section{
     h2{
         position: relative;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 5.5rem;
         font-weight: 700;
         span{
             color: var(--color-secondary);
+            font-size: 6rem;
         }
         .bg-text{
             position: absolute;
@@ -244,7 +259,7 @@ section{
             z-index: -1;
             transform: translate(-50%, -50%);
             font-weight: 800;
-            font-size: 6.3rem;
+            font-size: 8.75rem;
         }
     }
 }
@@ -253,7 +268,7 @@ section{
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 3.5rem;
+    padding-top: 6rem;
     padding-bottom: 5rem;
     .left-about{
         padding-right: 5rem;
@@ -485,7 +500,7 @@ section{
 
 //Portfolio
 .portfolio-text{
-    padding: 2rem 0;
+    padding: 6.5rem 0;
     text-align: center;
 }
 .portfolios{
@@ -561,7 +576,7 @@ section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 6.5rem;
     .blog-item{
         position: relative;
         background-color: var(--color-grey-5);
@@ -608,7 +623,7 @@ section{
 //Contacts
 .contact-content-container{
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 5.5rem;
     .left-contact{
         flex: 2;
         h4{
@@ -702,3 +717,29 @@ section{
         }
     }
 }
+
+.dark-mode{
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-1);
+    transition: all .1 ease-in-out;
+    &:active{
+        transform: translateY(-5px);
+    }
+    i{
+        font-size: 1.4rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+    }
+}
+
+@import './media';

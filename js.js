@@ -1,6 +1,9 @@
 //select all control buttons
 const secBtn = document.querySelectorAll('.control');
 
+//select dark-mode button
+const themeBtn = document.querySelector('.dark-mode');
+
 //Functionality for traversing between the different sections
 function sectionTransition(){
     //make clicked button the active-btn
@@ -23,4 +26,16 @@ function makeActive(e){
     section.classList.add('active');
 }
 
+//Functionality of changing website theme
+function toggle(){
+    themeBtn.addEventListener('click', toggleTheme);
+}
+
+//Toggle theme between light and dark mode
+function toggleTheme(){
+    let element = document.body;
+    element.classList.toggle('light');
+}
+
 sectionTransition();
+toggle();
