@@ -17,7 +17,6 @@ This is a portfolio website designed entirely from HTML, CSS and JS.
 <h4>Improvements to Add</h4>
   <ul>
     <li>Download link
-    <li>Links and pictures to projects
     <li>Form submission
   </ul>
 
