@@ -1,5 +1,5 @@
 # Portfolio
-This is my portfolio website. The overall structure of the website was set up using HTML and styled with CSS. JavaScript was used to set up user interactivity.
+This is a portfolio website designed entirely from HTML, CSS and JS.
 
 <h4>Features</h4>
   <ul>
@@ -17,7 +17,6 @@ This is my portfolio website. The overall structure of the website was set up us
 <h4>Improvements to Add</h4>
   <ul>
     <li>Download link
-    <li>Links and pictures to projects
     <li>Form submission
   </ul>
 
